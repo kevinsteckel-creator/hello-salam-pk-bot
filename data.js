@@ -1,182 +1,480 @@
-// Hello Salam Content Bot — daily data. Regenerated each morning by the 7 AM automation.
-window.HS_DATA={lastUpdated:"2026-05-23 (Eid sprint launch)",days:[
-{id:"d1",dw:"Sat",dd:"23",dm:"May",theme:"Eid Sale Season is ON",pillar:"Pillar: Eid Discounts + Travel teaser",slots:[
- {k:"morning",slot:"Morning",time:"9–10 AM",fmt:"carousel",topic:"Eid Fashion Sale Roundup — up to 50% off",
-  hook:"Eid shopping abhi tak nahi ki? Ye sales miss mat karna 🛍️",
-  capEN:"Eid-ul-Adha sales are LIVE 🔥 Up to 50% off at Sana Safinaz, LAAM & Gul Ahmed. Swipe for our pick of the best deals — then save this post before they sell out.\\n\\nWhich brand are you shopping first? 👇",
-  capRU:"Eid sales shuru ho gayi hain! 50% tak off — Sana Safinaz, LAAM aur Gul Ahmed par. Swipe karein aur post save kar lein. Aap pehle kahan se shopping karenge?",
-  tags:"#HelloSalam #EidSale #EidAlAdha2026 #EidShopping #PakistanDeals #Pakistan",
-  adapt:"FB: same carousel. TikTok/YT Shorts: 15s screen-record of the deals with trending audio."},
- {k:"evening",slot:"Evening",time:"7–8 PM",fmt:"reel",topic:"Northern areas Eid package teaser — Hunza from $260",
-  hook:"POV: 5 din ki Eid chhutti aur ticket abhi tak book nahi ki 👀",
-  capEN:"5 days off. The mountains are calling. 🏔️ Hunza Silver package from $260 — 2-star hotel + AC transport sorted. Eid plans still empty? Let's fix that.\\n\\n📞 Book: +92 318 5119004",
-  capRU:"5 din ki chhutti aur pahaar bula rahe hain! Hunza Silver package sirf $260 se. Eid ka plan abhi tak khali hai? DM ya call karein.",
-  tags:"#HelloSalam #VisitPakistan #Hunza #NorthernAreas #EidAlAdha2026 #TravelPakistan",
-  adapt:"IG Reel primary. TikTok: same clip. YT Shorts: vertical cut. FB: post as Reel."},
- {k:"late",slot:"Late Night",time:"10–11 PM",fmt:"photo",topic:"Countdown — 4 days to Eid + engagement question",
-  hook:"Sirf 4 din baaki! ⏳",
-  capEN:"4 days to Eid-ul-Adha 🌙 Tell us in one word how your Eid prep is going — chaos or controlled? 😄 Comment below.",
-  capRU:"Eid mein sirf 4 din! Aik lafz mein batayein — Eid ki tayari kaisi chal rahi hai? Comment karein.",
-  tags:"#HelloSalam #EidAlAdha2026 #EidCountdown #Pakistan #BakraEid",
-  adapt:"IG feed photo + Story countdown sticker. FB: same. Skip TikTok/YT for static."}]},
-
-{id:"d2",dw:"Sun",dd:"24",dm:"May",theme:"Plan the Long Weekend",pillar:"Pillar: Travel Tips + Relatable",slots:[
- {k:"morning",slot:"Morning",time:"9–10 AM",fmt:"carousel",topic:"5 things to pack for the northern areas this Eid",
-  hook:"Northern areas ja rahe hain? Ye 5 cheezein zaroor le jayein 🎒",
-  capEN:"Heading north this Eid? 🏔️ Don't leave without these 5 essentials. Swipe → and SAVE this for your trip.\\n\\nWhat's the one thing you ALWAYS forget to pack? 👇",
-  capRU:"Eid par north ja rahe hain? Ye 5 cheezein pack karna na bhoolein. Swipe karein aur save kar lein. Aap kya bhool jate hain?",
-  tags:"#HelloSalam #TravelPakistan #NorthernAreas #TravelTips #VisitPakistan #Hunza",
-  adapt:"FB: carousel. TikTok/YT Shorts: 'packing checklist' voiceover reel."},
- {k:"evening",slot:"Evening",time:"7–8 PM",fmt:"reel",topic:"Relatable — the pre-Eid household rush",
-  hook:"Eid se 3 din pehle har Pakistani ghar mein... 😂",
-  capEN:"Eid se 3 din pehle, every Pakistani home be like 😂 Tag someone who is THIS person in your family.",
-  capRU:"Eid se 3 din pehle har ghar ka haal! 😂 Apne family ke us bande ko tag karein jo aisa hi karta hai.",
-  tags:"#HelloSalam #BakraEid #EidAlAdha2026 #DesiHumour #Pakistan",
-  adapt:"Built for TikTok + IG Reels with trending comedy audio. YT Shorts same. FB Reel."},
- {k:"late",slot:"Late Night",time:"10–11 PM",fmt:"reel",topic:"Eid travel checklist — quick scroll reel",
-  hook:"Eid trip se pehle ye checklist dekh lein ✅",
-  capEN:"Eid road trip checklist ✅ Fuel, weather check, hotel confirmed, snacks loaded. Save this so you don't miss a step. Where are you headed? 👇",
-  capRU:"Eid road trip se pehle: petrol, mausam, hotel booking, snacks — sab check! Save kar lein. Aap kahan ja rahe hain?",
-  tags:"#HelloSalam #TravelPakistan #EidTravel #RoadTrip #NorthernAreas",
-  adapt:"IG Reel + TikTok + YT Shorts. FB Reel. Pin a checklist Story too."}]},
-
-{id:"d3",dw:"Mon",dd:"25",dm:"May",theme:"Eid Discounts Deep-Dive",pillar:"Pillar: Eid Discounts",slots:[
- {k:"morning",slot:"Morning",time:"9–10 AM",fmt:"carousel",topic:"Bank card discounts for Eid — Meezan & more",
-  hook:"Eid shopping card se kar rahe hain? Pehle ye dekhein 💳",
-  capEN:"Shopping for Eid with your bank card? 💳 These card discounts can save you serious money. Swipe for the list → SAVE & share with whoever's still shopping.",
-  capRU:"Eid shopping card se? Ye bank discounts paisa bachayenge. Swipe karein, save karein aur doston ke saath share karein.",
-  tags:"#HelloSalam #EidDiscounts #BankDiscounts #EidSale #Pakistan #EidShopping",
-  adapt:"FB: carousel. TikTok/YT Shorts: fast 'deals' montage with on-screen text."},
- {k:"evening",slot:"Evening",time:"7–8 PM",fmt:"reel",topic:"Eid food & dining deals",
-  hook:"Eid ki dawat ka plan? Ye deals dekh lein 🍴",
-  capEN:"Eid dinner sorted 🍴 Restaurant & food deals worth knowing before the big day. Tag your Eid dawat crew 👇",
-  capRU:"Eid ki dawat ka plan ban gaya? Ye food deals zaroor dekhein. Apni dawat wali team ko tag karein!",
-  tags:"#HelloSalam #FoodDiscounts #EidAlAdha2026 #FoodiesOfPakistan #EidFood",
-  adapt:"IG Reel + TikTok + YT Shorts food b-roll. FB Reel."},
- {k:"late",slot:"Late Night",time:"10–11 PM",fmt:"photo",topic:"Countdown — 2 days to Eid + this-or-that",
-  hook:"2 din baaki — aap team kya ho? 🐐",
-  capEN:"2 days to Eid 🌙 This or that: Eid at home with family 🏡 OR Eid trip to the mountains 🏔️? Comment your pick!",
-  capRU:"Eid mein sirf 2 din! Aap kya choose karenge — ghar par family ke saath, ya pahaaron ka trip? Comment karein!",
-  tags:"#HelloSalam #EidAlAdha2026 #EidCountdown #BakraEid #Pakistan",
-  adapt:"IG photo + Story poll sticker (this/that). FB same."}]},
-
-{id:"d4",dw:"Tue",dd:"26",dm:"May",theme:"Chand Raat",pillar:"Pillar: Events + Community",slots:[
- {k:"morning",slot:"Morning",time:"9–10 AM",fmt:"carousel",topic:"Chand Raat events across cities",
-  hook:"Chand Raat tonight! Aapke sheher mein kya ho raha hai 🌙",
-  capEN:"Chand Raat is here! 🌙 Where to celebrate tonight in Islamabad, Lahore, Karachi & Multan — swipe for the list. Which city are you in? 👇",
-  capRU:"Chand Raat aa gayi! Islamabad, Lahore, Karachi aur Multan mein kahan jana hai — swipe karein. Aap kis sheher mein hain?",
-  tags:"#HelloSalam #ChandRaat #EidAlAdha2026 #Islamabad #Lahore #Karachi #Multan",
-  adapt:"FB: carousel. TikTok/YT Shorts: city event montage."},
- {k:"evening",slot:"Evening",time:"7–8 PM",fmt:"reel",topic:"Chand Raat vibes — mehndi, bangles, bazaar",
-  hook:"Chand Raat ki raunaq 🌙✨",
-  capEN:"Mehndi, choorian, bazaar ki raunaq — Chand Raat hits different ✨ Tag your Chand Raat shopping partner!",
-  capRU:"Mehndi, choorian aur bazaar ki raunaq — Chand Raat ka apna hi maza hai! Apne Chand Raat shopping partner ko tag karein.",
-  tags:"#HelloSalam #ChandRaat #EidAlAdha2026 #Mehndi #Pakistan",
-  adapt:"IG Reel + TikTok + YT Shorts with festive trending audio. FB Reel."},
- {k:"late",slot:"Late Night",time:"10–11 PM",fmt:"photo",topic:"Eid Mubarak eve greeting + moon",
-  hook:"Chaand mubarak ho! 🌙",
-  capEN:"Chaand mubarak, Pakistan 🌙 From all of us at Hello Salam — may your Eid-ul-Adha be full of barkat, joy and time with the people you love. 💚",
-  capRU:"Chaand mubarak ho! Hello Salam ki taraf se aap sab ko Eid-ul-Adha bohat bohat mubarak. Allah aapki Eid khushiyon se bhar de. 💚",
-  tags:"#HelloSalam #ChaandMubarak #EidMubarak #EidAlAdha2026 #Pakistan",
-  adapt:"All platforms — branded greeting graphic. Post as Story too."}]},
-
-{id:"d5",dw:"Wed",dd:"27",dm:"May",theme:"EID DAY — Greeting + Giveaway",pillar:"Pillar: Community + Follower growth",eid:true,slots:[
- {k:"morning",slot:"Morning",time:"9–10 AM",fmt:"reel",topic:"Eid Mubarak from the Hello Salam team",
-  hook:"Eid Mubarak Pakistan! 💚🐐",
-  capEN:"Eid-ul-Adha Mubarak! 💚 From the whole Hello Salam family to yours — may this Eid bring barkat, safe travels and unforgettable moments. Drop a 🤍 if Eid Mubarak to you too!",
-  capRU:"Eid-ul-Adha Mubarak ho! 💚 Hello Salam ki poori team ki taraf se aap aur aapki family ko Eid bohat mubarak. 🤍 comment karein agar aapko bhi Eid Mubarak!",
-  tags:"#HelloSalam #EidMubarak #EidAlAdha2026 #BakraEid #Pakistan #EidInPakistan",
-  adapt:"Warm team Reel, all platforms. FB + TikTok + YT Shorts."},
- {k:"evening",slot:"Evening",time:"7–8 PM",fmt:"giveaway",topic:"EID GIVEAWAY — follower-growth post",
-  hook:"EID GIVEAWAY 🎁 — jeetne ka mauka!",
-  capEN:"🎁 EID GIVEAWAY 🎁 We're giving away a discount voucher on a Hello Salam northern-areas package!\\n\\nTo enter:\\n1️⃣ Follow @hellosalampk\\n2️⃣ Like this post\\n3️⃣ Tag 3 friends in the comments\\n\\nWinner announced 31 May. Eid Mubarak — good luck! 💚",
-  capRU:"🎁 EID GIVEAWAY 🎁 Hello Salam northern-areas package par discount voucher jeetein!\\n\\nHissa lene ke liye: Follow karein, post like karein, 3 doston ko tag karein. Winner 31 May ko! Good luck!",
-  tags:"#HelloSalam #EidGiveaway #Giveaway #EidAlAdha2026 #VisitPakistan #Pakistan",
-  adapt:"IG primary (drives follows). FB: same mechanic. TikTok/YT: announce + link to IG. Confirm prize before posting."},
- {k:"late",slot:"Late Night",time:"10–11 PM",fmt:"photo",topic:"Eid Day 1 UGC ask",
-  hook:"Eid ka pehla din kaisa guzra? 📸",
-  capEN:"Eid Day 1 — done! 📸 Show us your Eid: post your photo to your Story and tag @hellosalampk — we'll reshare our favourites. Where did you spend it?",
-  capRU:"Eid ka pehla din mukammal! Apni Eid ki photo Story par lagayein aur @hellosalampk ko tag karein — hum best photos reshare karenge. Eid kahan guzari?",
-  tags:"#HelloSalam #EidAlAdha2026 #EidInPakistan #BakraEid #Pakistan",
-  adapt:"IG-led UGC. FB: same. Reshare tagged content all evening."}]},
-
-{id:"d6",dw:"Thu",dd:"28",dm:"May",theme:"Eid Travel Exodus",pillar:"Pillar: Travel + Conversion",slots:[
- {k:"morning",slot:"Morning",time:"9–10 AM",fmt:"reel",topic:"Northern areas on Eid — scenic Reel",
-  hook:"Eid ke doosre din ka plan? 🏔️",
-  capEN:"This is where Pakistan goes on Eid 🏔️ Hunza, Skardu, Swat — the long weekend is the perfect window. Still home? There's time. 📞 +92 318 5119004",
-  capRU:"Eid par Pakistan yahan jata hai! Hunza, Skardu, Swat — long weekend perfect mauka hai. Abhi bhi ghar par hain? Waqt hai — call karein.",
-  tags:"#HelloSalam #VisitPakistan #Hunza #Skardu #SwatValley #NorthernAreas #TravelPakistan",
-  adapt:"Scenic Reel — strongest on IG + TikTok + YT Shorts. FB Reel."},
- {k:"evening",slot:"Evening",time:"7–8 PM",fmt:"carousel",topic:"Hunza & Skardu 5-day packages",
-  hook:"Hunza + Skardu, 5 din — pura plan ready 🗺️",
-  capEN:"Hunza & Skardu in 5 days — every package, every budget. Swipe → Silver, Gold, Premium. SAVE this & DM us to book your Eid escape.",
-  capRU:"Hunza aur Skardu, 5 din mein! Silver, Gold, Premium — har budget ke liye. Swipe karein, save karein aur booking ke liye DM karein.",
-  tags:"#HelloSalam #Hunza #Skardu #TravelPakistan #NorthernAreas #VisitPakistan",
-  adapt:"FB: carousel. TikTok/YT Shorts: package highlights reel."},
- {k:"late",slot:"Late Night",time:"10–11 PM",fmt:"photo",topic:"Repost a follower's travel photo (UGC)",
-  hook:"Aapki Eid, aapki tasveerein 📸",
-  capEN:"Reposting your Eid travels 📸 This shot is everything. Keep tagging @hellosalampk in your Story — you could be next on our feed! 💚",
-  capRU:"Aapki Eid travel photos reshare kar rahe hain! 📸 @hellosalampk ko tag karte rahein — agli baar aapki photo yahan ho sakti hai!",
-  tags:"#HelloSalam #VisitPakistan #BeautifulPakistan #EidTravel #NorthernAreas",
-  adapt:"IG + FB repost (credit the creator). Builds reciprocal sharing."}]},
-
-{id:"d7",dw:"Fri",dd:"29",dm:"May",theme:"Eid Food & Family",pillar:"Pillar: Community + Discounts",slots:[
- {k:"morning",slot:"Morning",time:"9–10 AM",fmt:"carousel",topic:"Eid food spots across cities",
-  hook:"Eid pe bahar khane ka plan? Ye jagah dekhein 🍽️",
-  capEN:"Eid food crawl 🍽️ The spots worth visiting in Islamabad, Lahore & Karachi this Eid. Swipe → SAVE → tag your foodie. Where are you eating?",
-  capRU:"Eid par bahar khana? Islamabad, Lahore aur Karachi ki best jagahein. Swipe karein, save karein, apne foodie dost ko tag karein!",
-  tags:"#HelloSalam #FoodiesOfPakistan #EidFood #FoodDiscounts #Pakistan",
-  adapt:"FB: carousel. TikTok/YT Shorts: food b-roll reel."},
- {k:"evening",slot:"Evening",time:"7–8 PM",fmt:"reel",topic:"Relatable Eid family moment",
-  hook:"Eid pe family ke saath... ye sab hota hai 😅💚",
-  capEN:"Eid with family = chaos + love in equal parts 😅💚 Tag the family member this reminds you of!",
-  capRU:"Eid family ke saath = thora chaos, bohat saara pyaar! 💚 Apne us family member ko tag karein jo yaad aaya.",
-  tags:"#HelloSalam #EidAlAdha2026 #DesiFamily #Pakistan #BakraEid",
-  adapt:"TikTok + IG Reels relatable audio. YT Shorts. FB Reel."},
- {k:"late",slot:"Late Night",time:"10–11 PM",fmt:"photo",topic:"Weekend travel deal flash",
-  hook:"Weekend abhi baaki hai — flash deal! ⚡",
-  capEN:"⚡ Long weekend isn't over! Limited Eid-weekend slots on our northern packages. DM 'EID' to grab one before they're gone.",
-  capRU:"Long weekend abhi khatam nahi hua! Northern packages ke kuch slots baaki hain. 'EID' DM karein — jaldi karein!",
-  tags:"#HelloSalam #TravelPakistan #EidTravel #NorthernAreas #VisitPakistan",
-  adapt:"IG + FB. Add a countdown Story. Conversion-focused."}]},
-
-{id:"d8",dw:"Sat",dd:"30",dm:"May",theme:"Last-Minute Long Weekend",pillar:"Pillar: Travel + Conversion",slots:[
- {k:"morning",slot:"Morning",time:"9–10 AM",fmt:"reel",topic:"Last-minute trip — it's not too late",
-  hook:"Long weekend abhi khatam nahi hua! 🏔️",
-  capEN:"Still time to make this long weekend count 🏔️ Last-minute northern trips, sorted in one call. Who needs to see this? Tag them 👇",
-  capRU:"Long weekend ka faida abhi bhi utha sakte hain! Last-minute northern trip — aik call mein sab set. Apne us dost ko tag karein!",
-  tags:"#HelloSalam #VisitPakistan #NorthernAreas #TravelPakistan #Hunza",
-  adapt:"IG Reel + TikTok + YT Shorts. FB Reel."},
- {k:"evening",slot:"Evening",time:"7–8 PM",fmt:"carousel",topic:"Kashmir package spotlight",
-  hook:"Kashmir — jannat ka tukda 🍃",
-  capEN:"Kashmir is calling 🍃 Our 5-day Gold Kashmir package — swipe for what's included. SAVE & DM to book. Have you been to Kashmir?",
-  capRU:"Kashmir bula raha hai! 5-day Gold Kashmir package — swipe karke dekhein kya included hai. Booking ke liye DM karein. Aap Kashmir gaye hain?",
-  tags:"#HelloSalam #Kashmir #VisitPakistan #TravelPakistan #BeautifulPakistan",
-  adapt:"FB: carousel. TikTok/YT Shorts: Kashmir scenic reel."},
- {k:"late",slot:"Late Night",time:"10–11 PM",fmt:"photo",topic:"Best Eid moment — engagement poll",
-  hook:"Aapki Eid ka best lamha kya tha? 💚",
-  capEN:"As the long weekend winds down — what was the BEST moment of your Eid? 💚 Tell us in the comments. We're reading every one.",
-  capRU:"Long weekend khatam ho raha hai — aapki Eid ka sabse acha lamha kya tha? Comments mein batayein, hum sab parh rahe hain!",
-  tags:"#HelloSalam #EidAlAdha2026 #EidInPakistan #Pakistan",
-  adapt:"IG photo + Story question sticker. FB same."}]},
-
-{id:"d9",dw:"Sun",dd:"31",dm:"May",theme:"Wrap-Up & Winner",pillar:"Pillar: Community + Follower growth",slots:[
- {k:"morning",slot:"Morning",time:"9–10 AM",fmt:"carousel",topic:"Your Eid in photos — UGC roundup",
-  hook:"Aapki Eid, aik jagah 📸💚",
-  capEN:"Your Eid-ul-Adha, all in one place 📸 A huge thank you to everyone who tagged us. Swipe through the best of your moments → 💚",
-  capRU:"Aapki Eid-ul-Adha — aik jagah! 📸 Jin logon ne humein tag kiya, sab ka bohat shukriya. Best moments swipe karke dekhein!",
-  tags:"#HelloSalam #EidInPakistan #EidAlAdha2026 #Pakistan #VisitPakistan",
-  adapt:"FB: carousel. IG: carousel + Story highlight. Credit every creator."},
- {k:"evening",slot:"Evening",time:"7–8 PM",fmt:"reel",topic:"Eid week recap reel",
-  hook:"Eid week 2026 — ye raha recap! 🎬",
-  capEN:"That's a wrap on Eid week 🎬 The destinations, the deals, the moments. Save this for your next trip — and tell us where Hello Salam should take you next 👇",
-  capRU:"Eid week 2026 ka recap! 🎬 Destinations, deals aur yaadein. Save kar lein — aur batayein agla safar kahan ka ho?",
-  tags:"#HelloSalam #VisitPakistan #EidAlAdha2026 #TravelPakistan #NorthernAreas",
-  adapt:"Recap Reel — IG + TikTok + YT Shorts. FB Reel."},
- {k:"late",slot:"Late Night",time:"10–11 PM",fmt:"giveaway",topic:"Giveaway winner announcement + follow CTA",
-  hook:"Giveaway winner ka elaan! 🎁",
-  capEN:"🎁 The Eid Giveaway winner is... check the post to see if it's you! Congratulations 🎉 Didn't win? Stay followed — Hello Salam runs deals & giveaways all year. Thank you for an incredible Eid week 💚",
-  capRU:"🎁 Eid Giveaway ka winner aa gaya! Post mein dekhein kahin aap to nahi! Mubarak ho! Nahi jeeta? Follow rakhein — Hello Salam saal bhar deals aur giveaways laata hai. Shukriya!",
-  tags:"#HelloSalam #EidGiveaway #EidAlAdha2026 #Pakistan #VisitPakistan",
-  adapt:"IG + FB announcement. Pin the post. Retains the new followers."}]}
-]};
+// Hello Salam Content Bot — data. lastUpdated, trending[], days[]. Regenerated each morning by the 7 AM automation.
+window.HS_DATA={
+ "lastUpdated": "2026-05-23 — Eid trends refreshed",
+ "trending": [
+  {
+   "topic": "‘Trump’ the albino buffalo goes viral pre-Eid",
+   "why": "Unusual animal content reliably goes viral before Eid — do a fun Hello Salam bakra-mandi reel.",
+   "src": "https://bloompakistan.com/trump-the-albino-buffalo-goes-viral-ahead-of-eid-al-adha-2026/"
+  },
+  {
+   "topic": "Kashmiri choorian dominate Eid fashion",
+   "why": "Bangles trend is everywhere — tie it into a Chand Raat / fashion-discount carousel.",
+   "src": "https://www.arabnews.com/node/2637118/pakistan"
+  },
+  {
+   "topic": "Negative-space & rose mehndi designs 2026",
+   "why": "Most Instagram-viral mehndi style this year — perfect Chand Raat reel inspiration.",
+   "src": "https://newmehndidesign.blog/25-trending-eid-al-adha-mehndi-designs-2026/"
+  },
+  {
+   "topic": "Multan woman butcher goes viral",
+   "why": "Gender-norm-breaking content resonates — a community / empowerment angle.",
+   "src": "https://www.pakistantoday.com.pk/2026/05/17/viral-video-shows-woman-offering-butchery-services-ahead-of-eidul-azha"
+  },
+  {
+   "topic": "Extended 5-day Eid break confirmed (27–31 May)",
+   "why": "Peak travel window — push northern-areas packages hard this week.",
+   "src": "https://propakistani.pk/2026/05/18/eid-ul-azha-holidays-in-pakistan-confirmed/"
+  },
+  {
+   "topic": "Gul Ahmed & LAAM Eid sales up to 50% off",
+   "why": "Live sales right now — build a discount-roundup carousel.",
+   "src": "https://www.gulahmedshop.com/sale"
+  }
+ ],
+ "days": [
+  {
+   "id": "d1",
+   "dw": "Sat",
+   "dd": "23",
+   "dm": "May",
+   "theme": "Eid Sale Season is ON",
+   "pillar": "Pillar: Eid Discounts + Travel teaser",
+   "slots": [
+    {
+     "k": "morning",
+     "slot": "Morning",
+     "time": "9–10 AM",
+     "fmt": "carousel",
+     "topic": "Eid Fashion Sale Roundup — up to 50% off",
+     "hook": "Eid shopping abhi tak nahi ki? Ye sales miss mat karna 🛍️",
+     "capEN": "Eid-ul-Adha sales are LIVE 🔥 Up to 50% off at Sana Safinaz, LAAM & Gul Ahmed. Swipe for our pick of the best deals — then save this post before they sell out.\\n\\nWhich brand are you shopping first? 👇",
+     "capRU": "Eid sales shuru ho gayi hain! 50% tak off — Sana Safinaz, LAAM aur Gul Ahmed par. Swipe karein aur post save kar lein. Aap pehle kahan se shopping karenge?",
+     "tags": "#HelloSalam #EidSale #EidAlAdha2026 #EidShopping #PakistanDeals #Pakistan",
+     "adapt": "FB: same carousel. TikTok/YT Shorts: 15s screen-record of the deals with trending audio.",
+     "src": "https://www.gulahmedshop.com/sale"
+    },
+    {
+     "k": "evening",
+     "slot": "Evening",
+     "time": "7–8 PM",
+     "fmt": "reel",
+     "topic": "Northern areas Eid package teaser — Hunza from $260",
+     "hook": "POV: 5 din ki Eid chhutti aur ticket abhi tak book nahi ki 👀",
+     "capEN": "5 days off. The mountains are calling. 🏔️ Hunza Silver package from $260 — 2-star hotel + AC transport sorted. Eid plans still empty? Let's fix that.\\n\\n📞 Book: +92 318 5119004",
+     "capRU": "5 din ki chhutti aur pahaar bula rahe hain! Hunza Silver package sirf $260 se. Eid ka plan abhi tak khali hai? DM ya call karein.",
+     "tags": "#HelloSalam #VisitPakistan #Hunza #NorthernAreas #EidAlAdha2026 #TravelPakistan",
+     "adapt": "IG Reel primary. TikTok: same clip. YT Shorts: vertical cut. FB: post as Reel.",
+     "src": "https://www.gulahmedshop.com/sale"
+    },
+    {
+     "k": "late",
+     "slot": "Late Night",
+     "time": "10–11 PM",
+     "fmt": "photo",
+     "topic": "Countdown — 4 days to Eid + engagement question",
+     "hook": "Sirf 4 din baaki! ⏳",
+     "capEN": "4 days to Eid-ul-Adha 🌙 Tell us in one word how your Eid prep is going — chaos or controlled? 😄 Comment below.",
+     "capRU": "Eid mein sirf 4 din! Aik lafz mein batayein — Eid ki tayari kaisi chal rahi hai? Comment karein.",
+     "tags": "#HelloSalam #EidAlAdha2026 #EidCountdown #Pakistan #BakraEid",
+     "adapt": "IG feed photo + Story countdown sticker. FB: same. Skip TikTok/YT for static.",
+     "src": "https://www.gulahmedshop.com/sale"
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "dw": "Sun",
+   "dd": "24",
+   "dm": "May",
+   "theme": "Plan the Long Weekend",
+   "pillar": "Pillar: Travel Tips + Relatable",
+   "slots": [
+    {
+     "k": "morning",
+     "slot": "Morning",
+     "time": "9–10 AM",
+     "fmt": "carousel",
+     "topic": "5 things to pack for the northern areas this Eid",
+     "hook": "Northern areas ja rahe hain? Ye 5 cheezein zaroor le jayein 🎒",
+     "capEN": "Heading north this Eid? 🏔️ Don't leave without these 5 essentials. Swipe → and SAVE this for your trip.\\n\\nWhat's the one thing you ALWAYS forget to pack? 👇",
+     "capRU": "Eid par north ja rahe hain? Ye 5 cheezein pack karna na bhoolein. Swipe karein aur save kar lein. Aap kya bhool jate hain?",
+     "tags": "#HelloSalam #TravelPakistan #NorthernAreas #TravelTips #VisitPakistan #Hunza",
+     "adapt": "FB: carousel. TikTok/YT Shorts: 'packing checklist' voiceover reel.",
+     "src": "https://hellosalam.pk/packages/"
+    },
+    {
+     "k": "evening",
+     "slot": "Evening",
+     "time": "7–8 PM",
+     "fmt": "reel",
+     "topic": "Relatable — the pre-Eid household rush",
+     "hook": "Eid se 3 din pehle har Pakistani ghar mein... 😂",
+     "capEN": "Eid se 3 din pehle, every Pakistani home be like 😂 Tag someone who is THIS person in your family.",
+     "capRU": "Eid se 3 din pehle har ghar ka haal! 😂 Apne family ke us bande ko tag karein jo aisa hi karta hai.",
+     "tags": "#HelloSalam #BakraEid #EidAlAdha2026 #DesiHumour #Pakistan",
+     "adapt": "Built for TikTok + IG Reels with trending comedy audio. YT Shorts same. FB Reel.",
+     "src": "https://bloompakistan.com/trump-the-albino-buffalo-goes-viral-ahead-of-eid-al-adha-2026/"
+    },
+    {
+     "k": "late",
+     "slot": "Late Night",
+     "time": "10–11 PM",
+     "fmt": "reel",
+     "topic": "Eid travel checklist — quick scroll reel",
+     "hook": "Eid trip se pehle ye checklist dekh lein ✅",
+     "capEN": "Eid road trip checklist ✅ Fuel, weather check, hotel confirmed, snacks loaded. Save this so you don't miss a step. Where are you headed? 👇",
+     "capRU": "Eid road trip se pehle: petrol, mausam, hotel booking, snacks — sab check! Save kar lein. Aap kahan ja rahe hain?",
+     "tags": "#HelloSalam #TravelPakistan #EidTravel #RoadTrip #NorthernAreas",
+     "adapt": "IG Reel + TikTok + YT Shorts. FB Reel. Pin a checklist Story too.",
+     "src": "https://hellosalam.pk/packages/"
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "dw": "Mon",
+   "dd": "25",
+   "dm": "May",
+   "theme": "Eid Discounts Deep-Dive",
+   "pillar": "Pillar: Eid Discounts",
+   "slots": [
+    {
+     "k": "morning",
+     "slot": "Morning",
+     "time": "9–10 AM",
+     "fmt": "carousel",
+     "topic": "Bank card discounts for Eid — Meezan & more",
+     "hook": "Eid shopping card se kar rahe hain? Pehle ye dekhein 💳",
+     "capEN": "Shopping for Eid with your bank card? 💳 These card discounts can save you serious money. Swipe for the list → SAVE & share with whoever's still shopping.",
+     "capRU": "Eid shopping card se? Ye bank discounts paisa bachayenge. Swipe karein, save karein aur doston ke saath share karein.",
+     "tags": "#HelloSalam #EidDiscounts #BankDiscounts #EidSale #Pakistan #EidShopping",
+     "adapt": "FB: carousel. TikTok/YT Shorts: fast 'deals' montage with on-screen text.",
+     "src": "https://hellosalam.pk/discounts/"
+    },
+    {
+     "k": "evening",
+     "slot": "Evening",
+     "time": "7–8 PM",
+     "fmt": "reel",
+     "topic": "Eid food & dining deals",
+     "hook": "Eid ki dawat ka plan? Ye deals dekh lein 🍴",
+     "capEN": "Eid dinner sorted 🍴 Restaurant & food deals worth knowing before the big day. Tag your Eid dawat crew 👇",
+     "capRU": "Eid ki dawat ka plan ban gaya? Ye food deals zaroor dekhein. Apni dawat wali team ko tag karein!",
+     "tags": "#HelloSalam #FoodDiscounts #EidAlAdha2026 #FoodiesOfPakistan #EidFood",
+     "adapt": "IG Reel + TikTok + YT Shorts food b-roll. FB Reel.",
+     "src": "https://hellosalam.pk/discounts/"
+    },
+    {
+     "k": "late",
+     "slot": "Late Night",
+     "time": "10–11 PM",
+     "fmt": "photo",
+     "topic": "Countdown — 2 days to Eid + this-or-that",
+     "hook": "2 din baaki — aap team kya ho? 🐐",
+     "capEN": "2 days to Eid 🌙 This or that: Eid at home with family 🏡 OR Eid trip to the mountains 🏔️? Comment your pick!",
+     "capRU": "Eid mein sirf 2 din! Aap kya choose karenge — ghar par family ke saath, ya pahaaron ka trip? Comment karein!",
+     "tags": "#HelloSalam #EidAlAdha2026 #EidCountdown #BakraEid #Pakistan",
+     "adapt": "IG photo + Story poll sticker (this/that). FB same.",
+     "src": "https://hellosalam.pk/discounts/"
+    }
+   ]
+  },
+  {
+   "id": "d4",
+   "dw": "Tue",
+   "dd": "26",
+   "dm": "May",
+   "theme": "Chand Raat",
+   "pillar": "Pillar: Events + Community",
+   "slots": [
+    {
+     "k": "morning",
+     "slot": "Morning",
+     "time": "9–10 AM",
+     "fmt": "carousel",
+     "topic": "Chand Raat events across cities",
+     "hook": "Chand Raat tonight! Aapke sheher mein kya ho raha hai 🌙",
+     "capEN": "Chand Raat is here! 🌙 Where to celebrate tonight in Islamabad, Lahore, Karachi & Multan — swipe for the list. Which city are you in? 👇",
+     "capRU": "Chand Raat aa gayi! Islamabad, Lahore, Karachi aur Multan mein kahan jana hai — swipe karein. Aap kis sheher mein hain?",
+     "tags": "#HelloSalam #ChandRaat #EidAlAdha2026 #Islamabad #Lahore #Karachi #Multan",
+     "adapt": "FB: carousel. TikTok/YT Shorts: city event montage.",
+     "src": "https://hellosalam.pk/events/"
+    },
+    {
+     "k": "evening",
+     "slot": "Evening",
+     "time": "7–8 PM",
+     "fmt": "reel",
+     "topic": "Chand Raat vibes — mehndi, bangles, bazaar",
+     "hook": "Chand Raat ki raunaq 🌙✨",
+     "capEN": "Mehndi, choorian, bazaar ki raunaq — Chand Raat hits different ✨ Tag your Chand Raat shopping partner!",
+     "capRU": "Mehndi, choorian aur bazaar ki raunaq — Chand Raat ka apna hi maza hai! Apne Chand Raat shopping partner ko tag karein.",
+     "tags": "#HelloSalam #ChandRaat #EidAlAdha2026 #Mehndi #Pakistan",
+     "adapt": "IG Reel + TikTok + YT Shorts with festive trending audio. FB Reel.",
+     "src": "https://newmehndidesign.blog/25-trending-eid-al-adha-mehndi-designs-2026/"
+    },
+    {
+     "k": "late",
+     "slot": "Late Night",
+     "time": "10–11 PM",
+     "fmt": "photo",
+     "topic": "Eid Mubarak eve greeting + moon",
+     "hook": "Chaand mubarak ho! 🌙",
+     "capEN": "Chaand mubarak, Pakistan 🌙 From all of us at Hello Salam — may your Eid-ul-Adha be full of barkat, joy and time with the people you love. 💚",
+     "capRU": "Chaand mubarak ho! Hello Salam ki taraf se aap sab ko Eid-ul-Adha bohat bohat mubarak. Allah aapki Eid khushiyon se bhar de. 💚",
+     "tags": "#HelloSalam #ChaandMubarak #EidMubarak #EidAlAdha2026 #Pakistan",
+     "adapt": "All platforms — branded greeting graphic. Post as Story too.",
+     "src": "https://hellosalam.pk/events/"
+    }
+   ]
+  },
+  {
+   "id": "d5",
+   "dw": "Wed",
+   "dd": "27",
+   "dm": "May",
+   "theme": "EID DAY — Greeting + Giveaway",
+   "pillar": "Pillar: Community + Follower growth",
+   "eid": true,
+   "slots": [
+    {
+     "k": "morning",
+     "slot": "Morning",
+     "time": "9–10 AM",
+     "fmt": "reel",
+     "topic": "Eid Mubarak from the Hello Salam team",
+     "hook": "Eid Mubarak Pakistan! 💚🐐",
+     "capEN": "Eid-ul-Adha Mubarak! 💚 From the whole Hello Salam family to yours — may this Eid bring barkat, safe travels and unforgettable moments. Drop a 🤍 if Eid Mubarak to you too!",
+     "capRU": "Eid-ul-Adha Mubarak ho! 💚 Hello Salam ki poori team ki taraf se aap aur aapki family ko Eid bohat mubarak. 🤍 comment karein agar aapko bhi Eid Mubarak!",
+     "tags": "#HelloSalam #EidMubarak #EidAlAdha2026 #BakraEid #Pakistan #EidInPakistan",
+     "adapt": "Warm team Reel, all platforms. FB + TikTok + YT Shorts.",
+     "src": "https://hellosalam.pk/"
+    },
+    {
+     "k": "evening",
+     "slot": "Evening",
+     "time": "7–8 PM",
+     "fmt": "giveaway",
+     "topic": "EID GIVEAWAY — follower-growth post",
+     "hook": "EID GIVEAWAY 🎁 — jeetne ka mauka!",
+     "capEN": "🎁 EID GIVEAWAY 🎁 We're giving away a discount voucher on a Hello Salam northern-areas package!\\n\\nTo enter:\\n1️⃣ Follow @hellosalampk\\n2️⃣ Like this post\\n3️⃣ Tag 3 friends in the comments\\n\\nWinner announced 31 May. Eid Mubarak — good luck! 💚",
+     "capRU": "🎁 EID GIVEAWAY 🎁 Hello Salam northern-areas package par discount voucher jeetein!\\n\\nHissa lene ke liye: Follow karein, post like karein, 3 doston ko tag karein. Winner 31 May ko! Good luck!",
+     "tags": "#HelloSalam #EidGiveaway #Giveaway #EidAlAdha2026 #VisitPakistan #Pakistan",
+     "adapt": "IG primary (drives follows). FB: same mechanic. TikTok/YT: announce + link to IG. Confirm prize before posting.",
+     "src": "https://hellosalam.pk/"
+    },
+    {
+     "k": "late",
+     "slot": "Late Night",
+     "time": "10–11 PM",
+     "fmt": "photo",
+     "topic": "Eid Day 1 UGC ask",
+     "hook": "Eid ka pehla din kaisa guzra? 📸",
+     "capEN": "Eid Day 1 — done! 📸 Show us your Eid: post your photo to your Story and tag @hellosalampk — we'll reshare our favourites. Where did you spend it?",
+     "capRU": "Eid ka pehla din mukammal! Apni Eid ki photo Story par lagayein aur @hellosalampk ko tag karein — hum best photos reshare karenge. Eid kahan guzari?",
+     "tags": "#HelloSalam #EidAlAdha2026 #EidInPakistan #BakraEid #Pakistan",
+     "adapt": "IG-led UGC. FB: same. Reshare tagged content all evening.",
+     "src": "https://hellosalam.pk/"
+    }
+   ]
+  },
+  {
+   "id": "d6",
+   "dw": "Thu",
+   "dd": "28",
+   "dm": "May",
+   "theme": "Eid Travel Exodus",
+   "pillar": "Pillar: Travel + Conversion",
+   "slots": [
+    {
+     "k": "morning",
+     "slot": "Morning",
+     "time": "9–10 AM",
+     "fmt": "reel",
+     "topic": "Northern areas on Eid — scenic Reel",
+     "hook": "Eid ke doosre din ka plan? 🏔️",
+     "capEN": "This is where Pakistan goes on Eid 🏔️ Hunza, Skardu, Swat — the long weekend is the perfect window. Still home? There's time. 📞 +92 318 5119004",
+     "capRU": "Eid par Pakistan yahan jata hai! Hunza, Skardu, Swat — long weekend perfect mauka hai. Abhi bhi ghar par hain? Waqt hai — call karein.",
+     "tags": "#HelloSalam #VisitPakistan #Hunza #Skardu #SwatValley #NorthernAreas #TravelPakistan",
+     "adapt": "Scenic Reel — strongest on IG + TikTok + YT Shorts. FB Reel.",
+     "src": "https://hellosalam.pk/destination/"
+    },
+    {
+     "k": "evening",
+     "slot": "Evening",
+     "time": "7–8 PM",
+     "fmt": "carousel",
+     "topic": "Hunza & Skardu 5-day packages",
+     "hook": "Hunza + Skardu, 5 din — pura plan ready 🗺️",
+     "capEN": "Hunza & Skardu in 5 days — every package, every budget. Swipe → Silver, Gold, Premium. SAVE this & DM us to book your Eid escape.",
+     "capRU": "Hunza aur Skardu, 5 din mein! Silver, Gold, Premium — har budget ke liye. Swipe karein, save karein aur booking ke liye DM karein.",
+     "tags": "#HelloSalam #Hunza #Skardu #TravelPakistan #NorthernAreas #VisitPakistan",
+     "adapt": "FB: carousel. TikTok/YT Shorts: package highlights reel.",
+     "src": "https://hellosalam.pk/destination/"
+    },
+    {
+     "k": "late",
+     "slot": "Late Night",
+     "time": "10–11 PM",
+     "fmt": "photo",
+     "topic": "Repost a follower's travel photo (UGC)",
+     "hook": "Aapki Eid, aapki tasveerein 📸",
+     "capEN": "Reposting your Eid travels 📸 This shot is everything. Keep tagging @hellosalampk in your Story — you could be next on our feed! 💚",
+     "capRU": "Aapki Eid travel photos reshare kar rahe hain! 📸 @hellosalampk ko tag karte rahein — agli baar aapki photo yahan ho sakti hai!",
+     "tags": "#HelloSalam #VisitPakistan #BeautifulPakistan #EidTravel #NorthernAreas",
+     "adapt": "IG + FB repost (credit the creator). Builds reciprocal sharing.",
+     "src": "https://hellosalam.pk/destination/"
+    }
+   ]
+  },
+  {
+   "id": "d7",
+   "dw": "Fri",
+   "dd": "29",
+   "dm": "May",
+   "theme": "Eid Food & Family",
+   "pillar": "Pillar: Community + Discounts",
+   "slots": [
+    {
+     "k": "morning",
+     "slot": "Morning",
+     "time": "9–10 AM",
+     "fmt": "carousel",
+     "topic": "Eid food spots across cities",
+     "hook": "Eid pe bahar khane ka plan? Ye jagah dekhein 🍽️",
+     "capEN": "Eid food crawl 🍽️ The spots worth visiting in Islamabad, Lahore & Karachi this Eid. Swipe → SAVE → tag your foodie. Where are you eating?",
+     "capRU": "Eid par bahar khana? Islamabad, Lahore aur Karachi ki best jagahein. Swipe karein, save karein, apne foodie dost ko tag karein!",
+     "tags": "#HelloSalam #FoodiesOfPakistan #EidFood #FoodDiscounts #Pakistan",
+     "adapt": "FB: carousel. TikTok/YT Shorts: food b-roll reel.",
+     "src": "https://hellosalam.pk/food-discounts/"
+    },
+    {
+     "k": "evening",
+     "slot": "Evening",
+     "time": "7–8 PM",
+     "fmt": "reel",
+     "topic": "Relatable Eid family moment",
+     "hook": "Eid pe family ke saath... ye sab hota hai 😅💚",
+     "capEN": "Eid with family = chaos + love in equal parts 😅💚 Tag the family member this reminds you of!",
+     "capRU": "Eid family ke saath = thora chaos, bohat saara pyaar! 💚 Apne us family member ko tag karein jo yaad aaya.",
+     "tags": "#HelloSalam #EidAlAdha2026 #DesiFamily #Pakistan #BakraEid",
+     "adapt": "TikTok + IG Reels relatable audio. YT Shorts. FB Reel.",
+     "src": "https://www.pakistantoday.com.pk/2026/05/17/viral-video-shows-woman-offering-butchery-services-ahead-of-eidul-azha"
+    },
+    {
+     "k": "late",
+     "slot": "Late Night",
+     "time": "10–11 PM",
+     "fmt": "photo",
+     "topic": "Weekend travel deal flash",
+     "hook": "Weekend abhi baaki hai — flash deal! ⚡",
+     "capEN": "⚡ Long weekend isn't over! Limited Eid-weekend slots on our northern packages. DM 'EID' to grab one before they're gone.",
+     "capRU": "Long weekend abhi khatam nahi hua! Northern packages ke kuch slots baaki hain. 'EID' DM karein — jaldi karein!",
+     "tags": "#HelloSalam #TravelPakistan #EidTravel #NorthernAreas #VisitPakistan",
+     "adapt": "IG + FB. Add a countdown Story. Conversion-focused.",
+     "src": "https://hellosalam.pk/food-discounts/"
+    }
+   ]
+  },
+  {
+   "id": "d8",
+   "dw": "Sat",
+   "dd": "30",
+   "dm": "May",
+   "theme": "Last-Minute Long Weekend",
+   "pillar": "Pillar: Travel + Conversion",
+   "slots": [
+    {
+     "k": "morning",
+     "slot": "Morning",
+     "time": "9–10 AM",
+     "fmt": "reel",
+     "topic": "Last-minute trip — it's not too late",
+     "hook": "Long weekend abhi khatam nahi hua! 🏔️",
+     "capEN": "Still time to make this long weekend count 🏔️ Last-minute northern trips, sorted in one call. Who needs to see this? Tag them 👇",
+     "capRU": "Long weekend ka faida abhi bhi utha sakte hain! Last-minute northern trip — aik call mein sab set. Apne us dost ko tag karein!",
+     "tags": "#HelloSalam #VisitPakistan #NorthernAreas #TravelPakistan #Hunza",
+     "adapt": "IG Reel + TikTok + YT Shorts. FB Reel.",
+     "src": "https://hellosalam.pk/kashmir-valley-packages/"
+    },
+    {
+     "k": "evening",
+     "slot": "Evening",
+     "time": "7–8 PM",
+     "fmt": "carousel",
+     "topic": "Kashmir package spotlight",
+     "hook": "Kashmir — jannat ka tukda 🍃",
+     "capEN": "Kashmir is calling 🍃 Our 5-day Gold Kashmir package — swipe for what's included. SAVE & DM to book. Have you been to Kashmir?",
+     "capRU": "Kashmir bula raha hai! 5-day Gold Kashmir package — swipe karke dekhein kya included hai. Booking ke liye DM karein. Aap Kashmir gaye hain?",
+     "tags": "#HelloSalam #Kashmir #VisitPakistan #TravelPakistan #BeautifulPakistan",
+     "adapt": "FB: carousel. TikTok/YT Shorts: Kashmir scenic reel.",
+     "src": "https://hellosalam.pk/kashmir-valley-packages/"
+    },
+    {
+     "k": "late",
+     "slot": "Late Night",
+     "time": "10–11 PM",
+     "fmt": "photo",
+     "topic": "Best Eid moment — engagement poll",
+     "hook": "Aapki Eid ka best lamha kya tha? 💚",
+     "capEN": "As the long weekend winds down — what was the BEST moment of your Eid? 💚 Tell us in the comments. We're reading every one.",
+     "capRU": "Long weekend khatam ho raha hai — aapki Eid ka sabse acha lamha kya tha? Comments mein batayein, hum sab parh rahe hain!",
+     "tags": "#HelloSalam #EidAlAdha2026 #EidInPakistan #Pakistan",
+     "adapt": "IG photo + Story question sticker. FB same.",
+     "src": "https://hellosalam.pk/kashmir-valley-packages/"
+    }
+   ]
+  },
+  {
+   "id": "d9",
+   "dw": "Sun",
+   "dd": "31",
+   "dm": "May",
+   "theme": "Wrap-Up & Winner",
+   "pillar": "Pillar: Community + Follower growth",
+   "slots": [
+    {
+     "k": "morning",
+     "slot": "Morning",
+     "time": "9–10 AM",
+     "fmt": "carousel",
+     "topic": "Your Eid in photos — UGC roundup",
+     "hook": "Aapki Eid, aik jagah 📸💚",
+     "capEN": "Your Eid-ul-Adha, all in one place 📸 A huge thank you to everyone who tagged us. Swipe through the best of your moments → 💚",
+     "capRU": "Aapki Eid-ul-Adha — aik jagah! 📸 Jin logon ne humein tag kiya, sab ka bohat shukriya. Best moments swipe karke dekhein!",
+     "tags": "#HelloSalam #EidInPakistan #EidAlAdha2026 #Pakistan #VisitPakistan",
+     "adapt": "FB: carousel. IG: carousel + Story highlight. Credit every creator.",
+     "src": "https://www.instagram.com/hellosalampk/"
+    },
+    {
+     "k": "evening",
+     "slot": "Evening",
+     "time": "7–8 PM",
+     "fmt": "reel",
+     "topic": "Eid week recap reel",
+     "hook": "Eid week 2026 — ye raha recap! 🎬",
+     "capEN": "That's a wrap on Eid week 🎬 The destinations, the deals, the moments. Save this for your next trip — and tell us where Hello Salam should take you next 👇",
+     "capRU": "Eid week 2026 ka recap! 🎬 Destinations, deals aur yaadein. Save kar lein — aur batayein agla safar kahan ka ho?",
+     "tags": "#HelloSalam #VisitPakistan #EidAlAdha2026 #TravelPakistan #NorthernAreas",
+     "adapt": "Recap Reel — IG + TikTok + YT Shorts. FB Reel.",
+     "src": "https://www.instagram.com/hellosalampk/"
+    },
+    {
+     "k": "late",
+     "slot": "Late Night",
+     "time": "10–11 PM",
+     "fmt": "giveaway",
+     "topic": "Giveaway winner announcement + follow CTA",
+     "hook": "Giveaway winner ka elaan! 🎁",
+     "capEN": "🎁 The Eid Giveaway winner is... check the post to see if it's you! Congratulations 🎉 Didn't win? Stay followed — Hello Salam runs deals & giveaways all year. Thank you for an incredible Eid week 💚",
+     "capRU": "🎁 Eid Giveaway ka winner aa gaya! Post mein dekhein kahin aap to nahi! Mubarak ho! Nahi jeeta? Follow rakhein — Hello Salam saal bhar deals aur giveaways laata hai. Shukriya!",
+     "tags": "#HelloSalam #EidGiveaway #EidAlAdha2026 #Pakistan #VisitPakistan",
+     "adapt": "IG + FB announcement. Pin the post. Retains the new followers.",
+     "src": "https://www.instagram.com/hellosalampk/"
+    }
+   ]
+  }
+ ]
+};

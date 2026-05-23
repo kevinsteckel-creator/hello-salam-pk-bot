@@ -53,6 +53,9 @@ h2 .n{background:#0e7a4f;color:#fff;width:22px;height:22px;border-radius:50%;fon
   margin-top:3px;white-space:pre-wrap;}
 .tags{font-size:11px;color:#1565a8;margin-top:4px;word-spacing:2px;}
 .adapt{font-size:11px;color:#5a6b62;margin-top:4px;}
+.srclink{display:inline-block;background:#fff7e6;border:1px solid #f0d28a;color:#9a6b00;
+  text-decoration:none;border-radius:7px;padding:6px 11px;font-size:11px;font-weight:700;margin-top:9px;}
+.srclink:hover{background:#ffefc8;}
 .ctrl{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center;}
 .ctrl input,.ctrl select{font-family:inherit;font-size:12px;border:1px solid #ccd6cf;border-radius:7px;padding:6px 8px;}
 .ctrl input{flex:1;min-width:120px;}
@@ -61,10 +64,21 @@ h2 .n{background:#0e7a4f;color:#fff;width:22px;height:22px;border-radius:50%;fon
 button{font-family:inherit;cursor:pointer;border:none;border-radius:8px;font-size:12px;font-weight:600;}
 .copy{background:#0e7a4f;color:#fff;padding:6px 12px;}
 .copy:hover{background:#0a5c3c;}
+.trend{border:1px solid #e2e8e4;border-left:4px solid #d4a017;border-radius:10px;padding:11px 13px;margin-bottom:9px;}
+.trend .tt{font-weight:700;font-size:13px;}
+.trend .tw{font-size:12px;color:#5a6b62;margin:3px 0 6px;}
 .linkbtn{display:inline-block;background:#eef2ef;color:#0a5c3c;text-decoration:none;border-radius:8px;
   padding:7px 11px;font-size:12px;margin:4px 6px 4px 0;font-weight:600;}
 .linkbtn:hover{background:#dde7e1;}
-.grp{font-size:11px;font-weight:700;color:#7a8a80;text-transform:uppercase;margin:10px 0 4px;letter-spacing:.5px;}
+.srcbtn{background:#fff7e6;color:#9a6b00;}
+.page{border:1px solid #e2e8e4;border-radius:9px;padding:9px 12px;margin-bottom:8px;
+  display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;}
+.page b{font-size:13px;}
+.page .h{font-size:11px;color:#5a6b62;}
+.page .d{font-size:11px;color:#7a8a80;flex:1;min-width:120px;}
+.page a{font-size:11px;color:#0e7a4f;font-weight:700;text-decoration:none;}
+.page a:hover{text-decoration:underline;}
+.grp{font-size:11px;font-weight:700;color:#7a8a80;text-transform:uppercase;margin:12px 0 6px;letter-spacing:.5px;}
 .base{display:flex;flex-wrap:wrap;gap:10px;}
 .base .f{flex:1;min-width:150px;}
 .base label{font-size:11px;color:#5a6b62;display:block;margin-bottom:3px;}
@@ -99,41 +113,64 @@ footer{text-align:center;font-size:11px;color:#7a8a80;padding:18px 0;}
 
 <section>
   <h2><span class="n">2</span> Today's 3 posting tasks</h2>
-  <p class="note">Create all three today. Schedule: <b>Late Night</b> publishes tonight · <b>Morning</b> &amp; <b>Evening</b> publish tomorrow. Assign an owner and move each card To create → Created → Scheduled → Posted. Progress saves in this browser automatically.</p>
+  <p class="note">Create all three today. Schedule: <b>Late Night</b> publishes tonight · <b>Morning</b> &amp; <b>Evening</b> publish tomorrow. Each card has a 📎 Reference link — open it to see the source and get design ideas. Assign an owner and move each card To create → Created → Scheduled → Posted. Progress saves in this browser automatically.</p>
   <div id="cards"></div>
 </section>
 
 <section>
-  <h2><span class="n">3</span> Add a custom task</h2>
+  <h2><span class="n">3</span> 🔥 Trending in Pakistan right now</h2>
+  <p class="note">Live viral topics for our industry — refreshed every morning by the 7 AM automation. Click a source to see the original and turn it into a post.</p>
+  <div id="trendbox"></div>
+</section>
+
+<section>
+  <h2><span class="n">4</span> Add a custom task</h2>
   <p class="note">Paste fresh ideas here from the 7 AM daily trend brief (<code>Daily-Brief-YYYY-MM-DD.md</code> in your Hello Salam folder).</p>
   <div class="addrow">
     <input id="ct-topic" placeholder="Topic / idea">
     <select id="ct-fmt"><option value="reel">Reel</option><option value="carousel">Carousel</option><option value="photo">Photo</option></select>
     <input id="ct-cap" placeholder="Caption (optional)">
+    <input id="ct-src" placeholder="Source link (optional)">
     <button class="copy" onclick="addCustom()">+ Add to today</button>
   </div>
   <div id="customlist"></div>
 </section>
 
 <section>
-  <h2><span class="n">4</span> Live trend sources</h2>
+  <h2><span class="n">5</span> Where trends come from</h2>
   <div class="grp">Real-time trend trackers</div>
   <a class="linkbtn" href="https://trends24.in/pakistan/" target="_blank">trends24 — Pakistan</a>
   <a class="linkbtn" href="https://trends.google.com/trends/trendingsearches/daily?geo=PK" target="_blank">Google Trends PK</a>
   <a class="linkbtn" href="https://getdaytrends.com/pakistan/" target="_blank">GetDayTrends PK</a>
   <div class="grp">Format &amp; audio trends</div>
   <a class="linkbtn" href="https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en" target="_blank">TikTok Creative Center</a>
-  <a class="linkbtn" href="https://www.instagram.com/trending_in_pakistan/" target="_blank">@trending_in_pakistan</a>
-  <a class="linkbtn" href="https://www.instagram.com/hellosalampk/" target="_blank">Our Instagram</a>
-  <div class="grp">Industry — travel · discounts · events</div>
   <a class="linkbtn" href="https://laam.pk/collections/eid-deals" target="_blank">LAAM Eid Deals</a>
-  <a class="linkbtn" href="https://www.gulahmedshop.com/collections/sale" target="_blank">Gul Ahmed Sale</a>
+  <a class="linkbtn" href="https://www.gulahmedshop.com/sale" target="_blank">Gul Ahmed Sale</a>
   <a class="linkbtn" href="https://propakistani.pk/" target="_blank">ProPakistani</a>
-  <a class="linkbtn" href="https://hellosalam.pk/discounts/" target="_blank">Our Discounts Page</a>
+
+  <div class="grp">Pages to watch — accounts like us</div>
+  <div class="page"><b>Startup Pakistan</b><span class="h">@startuppakistansp</span>
+    <span class="d">Business &amp; startup news, ~940K — strong for news-hook formats</span>
+    <a href="https://www.instagram.com/startuppakistansp/" target="_blank">Open ↗</a></div>
+  <div class="page"><b>Travel Beautiful Pakistan</b><span class="h">@travelbeautifulpakistan</span>
+    <span class="d">Travel inspiration, ~360K — reference for scenic Reels</span>
+    <a href="https://www.instagram.com/travelbeautifulpakistan/" target="_blank">Open ↗</a></div>
+  <div class="page"><b>Trending in Pakistan</b><span class="h">@trending_in_pakistan</span>
+    <span class="d">Viral trend aggregator — see what is breaking today</span>
+    <a href="https://www.instagram.com/trending_in_pakistan/" target="_blank">Open ↗</a></div>
+  <div class="page"><b>Trending Reels Pakistan</b><span class="h">Facebook</span>
+    <span class="d">Viral reels &amp; audio aggregator</span>
+    <a href="https://www.facebook.com/trendingreelspakistan/" target="_blank">Open ↗</a></div>
+  <div class="page"><b>Pakistan Travel Deals</b><span class="h">Instagram tag</span>
+    <span class="d">Travel discount posts — competitor-style content</span>
+    <a href="https://www.instagram.com/explore/tags/pakistantraveldeals/" target="_blank">Open ↗</a></div>
+  <div class="page"><b>Hello Salam (us)</b><span class="h">@hellosalampk</span>
+    <span class="d">Our own page — check replies &amp; reshare team-tagged content</span>
+    <a href="https://www.instagram.com/hellosalampk/" target="_blank">Open ↗</a></div>
 </section>
 
 <section>
-  <h2><span class="n">5</span> +15% baseline tracker</h2>
+  <h2><span class="n">6</span> +15% baseline tracker</h2>
   <p class="note">Log numbers on <b>23 May</b> and again on <b>31 May</b>. A 15% lift on the start figure is the goal.</p>
   <div class="grp">Start — 23 May</div>
   <div class="base" id="baseStart"></div>
@@ -142,12 +179,13 @@ footer{text-align:center;font-size:11px;color:#7a8a80;padding:18px 0;}
   <div id="resultBox" class="theme" style="display:none"></div>
 </section>
 
-<footer>Hello Salam Content Bot v1 · share this file with the team · pairs with the daily 7 AM trend automation</footer>
+<footer>Hello Salam Content Bot · live web version · refreshed daily by the 7 AM trend automation</footer>
 </div>
 
 <script src="data.js"></script>
 <script>
 const DAYS=window.HS_DATA.days;
+const TRENDING=window.HS_DATA.trending||[];
 const PLATFORMS=["Instagram followers","Facebook followers","TikTok followers","YouTube subscribers","Avg likes/post","Avg comments/post"];
 const STATUS=[["todo","To create"],["created","Created"],["scheduled","Scheduled"],["posted","Posted"]];
 let store=JSON.parse(localStorage.getItem("hs_bot_v1")||"{}");
@@ -160,6 +198,8 @@ let active=DAYS[0].id;
 (function(){const n=new Date();const mm=n.toLocaleString("en-US",{month:"short"});const dd=String(n.getDate());
  const hit=DAYS.find(d=>d.dd===dd&&d.dm===mm);
  active=hit?hit.id:DAYS[DAYS.length-1].id;})();
+
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
 function dayProgress(day){let done=0,tot=0;day.slots.forEach(s=>{tot++;const t=store.tasks[day.id+"-"+s.k];if(t&&t.status==="posted")done++;});
  (store.custom[day.id]||[]).forEach(c=>{tot++;if(c.status==="posted")done++;});return done+"/"+tot;}
@@ -178,39 +218,48 @@ function card(dayId,s){
  div.innerHTML=
   '<div class="card-top"><span class="slot">'+s.slot+'</span><span class="time">'+s.time+'</span>'+
    '<span class="fmt '+s.fmt+'">'+s.fmt+'</span></div>'+
-  '<div class="topic">'+s.topic+'</div>'+
-  '<div class="lbl">Hook (first 1.5s)</div><div class="hook">'+s.hook+'</div>'+
-  '<div class="lbl">Caption — English</div><div class="cap" id="ce-'+key+'">'+s.capEN.replace(/\\n/g,"\n")+'</div>'+
-  '<div class="lbl">Caption — Roman Urdu</div><div class="cap" id="cr-'+key+'">'+s.capRU.replace(/\\n/g,"\n")+'</div>'+
-  '<div class="lbl">Hashtags</div><div class="tags">'+s.tags+'</div>'+
-  '<div class="adapt">📱 '+s.adapt+'</div>'+
+  '<div class="topic">'+esc(s.topic)+'</div>'+
+  '<div class="lbl">Hook (first 1.5s)</div><div class="hook">'+esc(s.hook)+'</div>'+
+  '<div class="lbl">Caption — English</div><div class="cap">'+esc(s.capEN).replace(/\\n/g,"\n")+'</div>'+
+  '<div class="lbl">Caption — Roman Urdu</div><div class="cap">'+esc(s.capRU).replace(/\\n/g,"\n")+'</div>'+
+  '<div class="lbl">Hashtags</div><div class="tags">'+esc(s.tags)+'</div>'+
+  '<div class="adapt">📱 '+esc(s.adapt)+'</div>'+
+  (s.src?'<br><a class="srclink" href="'+s.src+'" target="_blank">📎 Reference — see source &amp; get design ideas</a>':'')+
   '<div class="ctrl">'+
    '<button class="copy" onclick="cp(\''+key+'\')">Copy caption + tags</button>'+
-   '<input placeholder="Assign to…" value="'+(t.assignee||"")+'" oninput="setA(\''+key+'\',this.value)">'+
+   '<input placeholder="Assign to…" value="'+esc(t.assignee||"")+'" oninput="setA(\''+key+'\',this.value)">'+
    '<select class="st-'+t.status+'" onchange="setS(\''+key+'\',this.value,this)">'+opts+'</select>'+
   '</div>';
  return div;}
 
 function renderCards(){const day=DAYS.find(d=>d.id===active);
- document.getElementById("theme").innerHTML='<b>'+day.dw+' '+day.dd+' '+day.dm+' — '+day.theme+'</b><div class="pillar">'+day.pillar+'</div>';
+ document.getElementById("theme").innerHTML='<b>'+esc(day.dw+' '+day.dd+' '+day.dm+' — '+day.theme)+'</b><div class="pillar">'+esc(day.pillar)+'</div>';
  const c=document.getElementById("cards");c.innerHTML="";
  day.slots.forEach(s=>c.appendChild(card(day.id,s)));
  renderCustom();}
+
+function renderTrending(){const box=document.getElementById("trendbox");box.innerHTML="";
+ if(!TRENDING.length){box.innerHTML='<p class="note">No trending items yet — the 7 AM automation will fill this in.</p>';return;}
+ TRENDING.forEach(t=>{const d=document.createElement("div");d.className="trend";
+  d.innerHTML='<div class="tt">'+esc(t.topic)+'</div><div class="tw">💡 '+esc(t.why)+'</div>'+
+   (t.src?'<a class="linkbtn srcbtn" href="'+t.src+'" target="_blank">📎 See source</a>':'');
+  box.appendChild(d);});}
 
 function renderCustom(){const list=document.getElementById("customlist");list.innerHTML="";
  const arr=store.custom[active]||[];
  arr.forEach((c,i)=>{const div=document.createElement("div");div.className="card"+(c.status==="posted"?" posted":"");
   let opts=STATUS.map(([v,l])=>'<option value="'+v+'"'+(c.status===v?" selected":"")+'>'+l+'</option>').join("");
   div.innerHTML='<div class="card-top"><span class="slot">Custom</span><span class="fmt '+c.fmt+'">'+c.fmt+'</span></div>'+
-   '<div class="topic">'+c.topic+'</div>'+
-   (c.cap?'<div class="cap">'+c.cap+'</div>':'')+
+   '<div class="topic">'+esc(c.topic)+'</div>'+
+   (c.cap?'<div class="cap">'+esc(c.cap)+'</div>':'')+
+   (c.src?'<br><a class="srclink" href="'+c.src+'" target="_blank">📎 Reference</a>':'')+
    '<div class="ctrl"><select onchange="setCS('+i+',this.value)">'+opts+'</select>'+
    '<button class="copy" onclick="delC('+i+')" style="background:#b3175b">Remove</button></div>';
   list.appendChild(div);});}
 
 function cp(key){const day=DAYS.find(d=>d.id===active);
  const slot=day.slots.find(x=>(day.id+"-"+x.k)===key);
- const txt=slot.capEN.replace(/\\n/g,"\n")+"\n\n"+slot.capRU.replace(/\\n/g,"\n")+"\n\n"+slot.tags;
+ const txt=(slot.capEN+"\n\n"+slot.capRU).replace(/\\n/g,"\n")+"\n\n"+slot.tags;
  navigator.clipboard.writeText(txt).then(()=>{alert("Caption + hashtags copied ✅");});}
 function setA(key,v){store.tasks[key]=store.tasks[key]||{assignee:"",status:"todo"};store.tasks[key].assignee=v;save();}
 function setS(key,v,el){store.tasks[key]=store.tasks[key]||{assignee:"",status:"todo"};store.tasks[key].status=v;
@@ -220,8 +269,9 @@ function setS(key,v,el){store.tasks[key]=store.tasks[key]||{assignee:"",status:"
 function setCS(i,v){store.custom[active][i].status=v;save();renderCal();renderCustom();}
 function addCustom(){const topic=document.getElementById("ct-topic").value.trim();if(!topic){alert("Add a topic first");return;}
  const fmt=document.getElementById("ct-fmt").value;const cap=document.getElementById("ct-cap").value.trim();
- store.custom[active]=store.custom[active]||[];store.custom[active].push({topic,fmt,cap,status:"todo"});
- save();document.getElementById("ct-topic").value="";document.getElementById("ct-cap").value="";
+ const src=document.getElementById("ct-src").value.trim();
+ store.custom[active]=store.custom[active]||[];store.custom[active].push({topic,fmt,cap,src,status:"todo"});
+ save();document.getElementById("ct-topic").value="";document.getElementById("ct-cap").value="";document.getElementById("ct-src").value="";
  renderCustom();renderCal();}
 function delC(i){store.custom[active].splice(i,1);save();renderCustom();renderCal();}
 
@@ -237,8 +287,8 @@ function calcResult(){const box=document.getElementById("resultBox");let rows=""
    rows+='<div>'+p+': <b>'+(pct>=0?"+":"")+pct.toFixed(1)+'%</b> '+(hit?"✅ target hit":(pct>=0?"📈":"📉"))+'</div>';}});
  if(any){box.style.display="block";box.innerHTML='<b>Growth vs. target (+15%)</b>'+rows;}else{box.style.display="none";}}
 
-function renderAll(){renderCal();renderCards();renderBase();}
-document.getElementById("upd").textContent="\u21bb Trending data last updated: "+window.HS_DATA.lastUpdated;
+function renderAll(){renderCal();renderCards();renderTrending();renderBase();}
+document.getElementById("upd").textContent="↻ Trending data last updated: "+window.HS_DATA.lastUpdated;
 renderAll();
 </script>
 </body>
