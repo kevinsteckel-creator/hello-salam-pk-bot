@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello Salam — Daily Content Bot</title>
+<style>
+:root{ color-scheme: light; }
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:#eef2ef;color:#1c2a22;line-height:1.5;padding:18px;}
+.wrap{max-width:1080px;margin:0 auto;}
+header{background:linear-gradient(135deg,#0e7a4f,#0a5c3c);color:#fff;border-radius:16px;padding:22px 24px;}
+header h1{font-size:22px;font-weight:700;letter-spacing:.2px;}
+header p{font-size:13px;opacity:.9;margin-top:4px;}
+.goal{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
+.goal .chip{background:rgba(255,255,255,.16);border-radius:10px;padding:8px 12px;font-size:12px;}
+.goal .chip b{font-size:14px;}
+section{background:#fff;border-radius:14px;padding:18px;margin-top:16px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+h2{font-size:15px;color:#0a5c3c;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+h2 .n{background:#0e7a4f;color:#fff;width:22px;height:22px;border-radius:50%;font-size:12px;
+  display:inline-flex;align-items:center;justify-content:center;}
+.cal{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;}
+.day{flex:0 0 auto;min-width:96px;border:2px solid #e2e8e4;border-radius:11px;padding:9px 8px;
+  cursor:pointer;text-align:center;transition:.15s;background:#fafcfb;}
+.day:hover{border-color:#0e7a4f;}
+.day.active{background:#0e7a4f;border-color:#0e7a4f;color:#fff;}
+.day.eid{border-color:#d4a017;}
+.day.active.eid{background:#0e7a4f;}
+.day .dw{font-size:10px;text-transform:uppercase;opacity:.7;letter-spacing:.5px;}
+.day .dd{font-size:18px;font-weight:700;margin:1px 0;}
+.day .dm{font-size:10px;opacity:.7;}
+.day .badge{font-size:8px;background:#d4a017;color:#fff;border-radius:6px;padding:1px 5px;
+  display:inline-block;margin-top:3px;font-weight:700;}
+.day .prog{font-size:9px;margin-top:3px;opacity:.85;}
+.theme{background:#f0f7f3;border-left:4px solid #0e7a4f;border-radius:8px;padding:10px 12px;margin:14px 0;}
+.theme b{color:#0a5c3c;}
+.theme .pillar{font-size:11px;color:#5a6b62;}
+.card{border:1px solid #e2e8e4;border-radius:12px;padding:14px;margin-bottom:12px;}
+.card.posted{background:#f3f8f4;border-color:#bcdcc7;}
+.card-top{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px;}
+.slot{font-weight:700;font-size:13px;color:#0a5c3c;}
+.time{font-size:11px;background:#eef2ef;border-radius:6px;padding:2px 7px;color:#5a6b62;}
+.fmt{font-size:10px;font-weight:700;border-radius:6px;padding:2px 8px;text-transform:uppercase;letter-spacing:.4px;}
+.fmt.reel{background:#fce4ec;color:#b3175b;}
+.fmt.carousel{background:#e3f0fb;color:#1565a8;}
+.fmt.photo{background:#fff3da;color:#9a6b00;}
+.fmt.giveaway{background:#0e7a4f;color:#fff;}
+.topic{font-weight:700;font-size:14px;margin:2px 0 6px;}
+.lbl{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:#7a8a80;font-weight:700;margin-top:8px;}
+.hook{font-style:italic;color:#0e7a4f;font-size:13px;}
+.cap{background:#fafcfb;border:1px solid #eef2ef;border-radius:8px;padding:8px 10px;font-size:13px;
+  margin-top:3px;white-space:pre-wrap;}
+.tags{font-size:11px;color:#1565a8;margin-top:4px;word-spacing:2px;}
+.adapt{font-size:11px;color:#5a6b62;margin-top:4px;}
+.ctrl{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center;}
+.ctrl input,.ctrl select{font-family:inherit;font-size:12px;border:1px solid #ccd6cf;border-radius:7px;padding:6px 8px;}
+.ctrl input{flex:1;min-width:120px;}
+.st-todo{background:#fff3da;}.st-created{background:#e3f0fb;}
+.st-scheduled{background:#e7e0fb;}.st-posted{background:#cdebd5;}
+button{font-family:inherit;cursor:pointer;border:none;border-radius:8px;font-size:12px;font-weight:600;}
+.copy{background:#0e7a4f;color:#fff;padding:6px 12px;}
+.copy:hover{background:#0a5c3c;}
+.linkbtn{display:inline-block;background:#eef2ef;color:#0a5c3c;text-decoration:none;border-radius:8px;
+  padding:7px 11px;font-size:12px;margin:4px 6px 4px 0;font-weight:600;}
+.linkbtn:hover{background:#dde7e1;}
+.grp{font-size:11px;font-weight:700;color:#7a8a80;text-transform:uppercase;margin:10px 0 4px;letter-spacing:.5px;}
+.base{display:flex;flex-wrap:wrap;gap:10px;}
+.base .f{flex:1;min-width:150px;}
+.base label{font-size:11px;color:#5a6b62;display:block;margin-bottom:3px;}
+.base input{width:100%;border:1px solid #ccd6cf;border-radius:7px;padding:7px;font-size:13px;font-family:inherit;}
+.note{font-size:11px;color:#7a8a80;margin-top:8px;}
+.addrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+.addrow input,.addrow select{font-family:inherit;font-size:12px;border:1px solid #ccd6cf;border-radius:7px;padding:7px;}
+.addrow input{flex:1;min-width:140px;}
+footer{text-align:center;font-size:11px;color:#7a8a80;padding:18px 0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>🇵🇰 Hello Salam — Daily Content Bot</h1>
+  <p>Eid al-Adha sprint · 23–31 May 2026 · Instagram · Facebook · TikTok · YouTube</p>
+  <p id="upd" style="font-size:12px;opacity:.9;margin-top:3px"></p>
+  <div class="goal">
+    <div class="chip">Target this week<br><b>+15% followers &amp; engagement</b></div>
+    <div class="chip">Eid al-Adha<br><b>Wed 27 May</b></div>
+    <div class="chip">Daily posts<br><b>3 slots — AM / PM / Late</b></div>
+    <div class="chip">Long weekend<br><b>27–31 May</b></div>
+  </div>
+</header>
+
+<section>
+  <h2><span class="n">1</span> Pick a day</h2>
+  <div class="cal" id="cal"></div>
+  <div class="theme" id="theme"></div>
+</section>
+
+<section>
+  <h2><span class="n">2</span> Today's 3 posting tasks</h2>
+  <p class="note">Create all three today. Schedule: <b>Late Night</b> publishes tonight · <b>Morning</b> &amp; <b>Evening</b> publish tomorrow. Assign an owner and move each card To create → Created → Scheduled → Posted. Progress saves in this browser automatically.</p>
+  <div id="cards"></div>
+</section>
+
+<section>
+  <h2><span class="n">3</span> Add a custom task</h2>
+  <p class="note">Paste fresh ideas here from the 7 AM daily trend brief (<code>Daily-Brief-YYYY-MM-DD.md</code> in your Hello Salam folder).</p>
+  <div class="addrow">
+    <input id="ct-topic" placeholder="Topic / idea">
+    <select id="ct-fmt"><option value="reel">Reel</option><option value="carousel">Carousel</option><option value="photo">Photo</option></select>
+    <input id="ct-cap" placeholder="Caption (optional)">
+    <button class="copy" onclick="addCustom()">+ Add to today</button>
+  </div>
+  <div id="customlist"></div>
+</section>
+
+<section>
+  <h2><span class="n">4</span> Live trend sources</h2>
+  <div class="grp">Real-time trend trackers</div>
+  <a class="linkbtn" href="https://trends24.in/pakistan/" target="_blank">trends24 — Pakistan</a>
+  <a class="linkbtn" href="https://trends.google.com/trends/trendingsearches/daily?geo=PK" target="_blank">Google Trends PK</a>
+  <a class="linkbtn" href="https://getdaytrends.com/pakistan/" target="_blank">GetDayTrends PK</a>
+  <div class="grp">Format &amp; audio trends</div>
+  <a class="linkbtn" href="https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en" target="_blank">TikTok Creative Center</a>
+  <a class="linkbtn" href="https://www.instagram.com/trending_in_pakistan/" target="_blank">@trending_in_pakistan</a>
+  <a class="linkbtn" href="https://www.instagram.com/hellosalampk/" target="_blank">Our Instagram</a>
+  <div class="grp">Industry — travel · discounts · events</div>
+  <a class="linkbtn" href="https://laam.pk/collections/eid-deals" target="_blank">LAAM Eid Deals</a>
+  <a class="linkbtn" href="https://www.gulahmedshop.com/collections/sale" target="_blank">Gul Ahmed Sale</a>
+  <a class="linkbtn" href="https://propakistani.pk/" target="_blank">ProPakistani</a>
+  <a class="linkbtn" href="https://hellosalam.pk/discounts/" target="_blank">Our Discounts Page</a>
+</section>
+
+<section>
+  <h2><span class="n">5</span> +15% baseline tracker</h2>
+  <p class="note">Log numbers on <b>23 May</b> and again on <b>31 May</b>. A 15% lift on the start figure is the goal.</p>
+  <div class="grp">Start — 23 May</div>
+  <div class="base" id="baseStart"></div>
+  <div class="grp">End — 31 May</div>
+  <div class="base" id="baseEnd"></div>
+  <div id="resultBox" class="theme" style="display:none"></div>
+</section>
+
+<footer>Hello Salam Content Bot v1 · share this file with the team · pairs with the daily 7 AM trend automation</footer>
+</div>
+
+<script src="data.js"></script>
+<script>
+const DAYS=window.HS_DATA.days;
+const PLATFORMS=["Instagram followers","Facebook followers","TikTok followers","YouTube subscribers","Avg likes/post","Avg comments/post"];
+const STATUS=[["todo","To create"],["created","Created"],["scheduled","Scheduled"],["posted","Posted"]];
+let store=JSON.parse(localStorage.getItem("hs_bot_v1")||"{}");
+if(!store.tasks)store.tasks={};
+if(!store.custom)store.custom={};
+if(!store.base)store.base={};
+function save(){localStorage.setItem("hs_bot_v1",JSON.stringify(store));}
+
+let active=DAYS[0].id;
+(function(){const n=new Date();const mm=n.toLocaleString("en-US",{month:"short"});const dd=String(n.getDate());
+ const hit=DAYS.find(d=>d.dd===dd&&d.dm===mm);
+ active=hit?hit.id:DAYS[DAYS.length-1].id;})();
+
+function dayProgress(day){let done=0,tot=0;day.slots.forEach(s=>{tot++;const t=store.tasks[day.id+"-"+s.k];if(t&&t.status==="posted")done++;});
+ (store.custom[day.id]||[]).forEach(c=>{tot++;if(c.status==="posted")done++;});return done+"/"+tot;}
+
+function renderCal(){const c=document.getElementById("cal");c.innerHTML="";
+ DAYS.forEach(d=>{const el=document.createElement("div");
+  el.className="day"+(d.id===active?" active":"")+(d.eid?" eid":"");
+  el.innerHTML='<div class="dw">'+d.dw+'</div><div class="dd">'+d.dd+'</div><div class="dm">'+d.dm+'</div>'+
+   (d.eid?'<div class="badge">EID</div>':'')+'<div class="prog">'+dayProgress(d)+' done</div>';
+  el.onclick=()=>{active=d.id;renderAll();};c.appendChild(el);});}
+
+function card(dayId,s){
+ const key=dayId+"-"+s.k;const t=store.tasks[key]||{assignee:"",status:"todo"};
+ const div=document.createElement("div");div.className="card"+(t.status==="posted"?" posted":"");
+ let opts=STATUS.map(([v,l])=>'<option value="'+v+'"'+(t.status===v?" selected":"")+'>'+l+'</option>').join("");
+ div.innerHTML=
+  '<div class="card-top"><span class="slot">'+s.slot+'</span><span class="time">'+s.time+'</span>'+
+   '<span class="fmt '+s.fmt+'">'+s.fmt+'</span></div>'+
+  '<div class="topic">'+s.topic+'</div>'+
+  '<div class="lbl">Hook (first 1.5s)</div><div class="hook">'+s.hook+'</div>'+
+  '<div class="lbl">Caption — English</div><div class="cap" id="ce-'+key+'">'+s.capEN.replace(/\\n/g,"\n")+'</div>'+
+  '<div class="lbl">Caption — Roman Urdu</div><div class="cap" id="cr-'+key+'">'+s.capRU.replace(/\\n/g,"\n")+'</div>'+
+  '<div class="lbl">Hashtags</div><div class="tags">'+s.tags+'</div>'+
+  '<div class="adapt">📱 '+s.adapt+'</div>'+
+  '<div class="ctrl">'+
+   '<button class="copy" onclick="cp(\''+key+'\')">Copy caption + tags</button>'+
+   '<input placeholder="Assign to…" value="'+(t.assignee||"")+'" oninput="setA(\''+key+'\',this.value)">'+
+   '<select class="st-'+t.status+'" onchange="setS(\''+key+'\',this.value,this)">'+opts+'</select>'+
+  '</div>';
+ return div;}
+
+function renderCards(){const day=DAYS.find(d=>d.id===active);
+ document.getElementById("theme").innerHTML='<b>'+day.dw+' '+day.dd+' '+day.dm+' — '+day.theme+'</b><div class="pillar">'+day.pillar+'</div>';
+ const c=document.getElementById("cards");c.innerHTML="";
+ day.slots.forEach(s=>c.appendChild(card(day.id,s)));
+ renderCustom();}
+
+function renderCustom(){const list=document.getElementById("customlist");list.innerHTML="";
+ const arr=store.custom[active]||[];
+ arr.forEach((c,i)=>{const div=document.createElement("div");div.className="card"+(c.status==="posted"?" posted":"");
+  let opts=STATUS.map(([v,l])=>'<option value="'+v+'"'+(c.status===v?" selected":"")+'>'+l+'</option>').join("");
+  div.innerHTML='<div class="card-top"><span class="slot">Custom</span><span class="fmt '+c.fmt+'">'+c.fmt+'</span></div>'+
+   '<div class="topic">'+c.topic+'</div>'+
+   (c.cap?'<div class="cap">'+c.cap+'</div>':'')+
+   '<div class="ctrl"><select onchange="setCS('+i+',this.value)">'+opts+'</select>'+
+   '<button class="copy" onclick="delC('+i+')" style="background:#b3175b">Remove</button></div>';
+  list.appendChild(div);});}
+
+function cp(key){const day=DAYS.find(d=>d.id===active);
+ const slot=day.slots.find(x=>(day.id+"-"+x.k)===key);
+ const txt=slot.capEN.replace(/\\n/g,"\n")+"\n\n"+slot.capRU.replace(/\\n/g,"\n")+"\n\n"+slot.tags;
+ navigator.clipboard.writeText(txt).then(()=>{alert("Caption + hashtags copied ✅");});}
+function setA(key,v){store.tasks[key]=store.tasks[key]||{assignee:"",status:"todo"};store.tasks[key].assignee=v;save();}
+function setS(key,v,el){store.tasks[key]=store.tasks[key]||{assignee:"",status:"todo"};store.tasks[key].status=v;
+ el.className="st-"+v;save();renderCal();const day=DAYS.find(d=>d.id===active);
+ const c=day.slots.findIndex(x=>(day.id+"-"+x.k)===key);if(c>-1){const cards=document.getElementById("cards").children;
+ if(cards[c])cards[c].className="card"+(v==="posted"?" posted":"");}}
+function setCS(i,v){store.custom[active][i].status=v;save();renderCal();renderCustom();}
+function addCustom(){const topic=document.getElementById("ct-topic").value.trim();if(!topic){alert("Add a topic first");return;}
+ const fmt=document.getElementById("ct-fmt").value;const cap=document.getElementById("ct-cap").value.trim();
+ store.custom[active]=store.custom[active]||[];store.custom[active].push({topic,fmt,cap,status:"todo"});
+ save();document.getElementById("ct-topic").value="";document.getElementById("ct-cap").value="";
+ renderCustom();renderCal();}
+function delC(i){store.custom[active].splice(i,1);save();renderCustom();renderCal();}
+
+function renderBase(){const mk=(host,phase)=>{const el=document.getElementById(host);el.innerHTML="";
+ PLATFORMS.forEach(p=>{const k=phase+"|"+p;const f=document.createElement("div");f.className="f";
+  f.innerHTML='<label>'+p+'</label><input type="number" value="'+(store.base[k]||"")+'" oninput="setB(\''+k+'\',this.value)">';
+  el.appendChild(f);});};
+ mk("baseStart","start");mk("baseEnd","end");calcResult();}
+function setB(k,v){store.base[k]=v;save();calcResult();}
+function calcResult(){const box=document.getElementById("resultBox");let rows="",any=false;
+ PLATFORMS.forEach(p=>{const s=parseFloat(store.base["start|"+p]),e=parseFloat(store.base["end|"+p]);
+  if(s>0&&e>=0){any=true;const pct=((e-s)/s*100);const hit=pct>=15;
+   rows+='<div>'+p+': <b>'+(pct>=0?"+":"")+pct.toFixed(1)+'%</b> '+(hit?"✅ target hit":(pct>=0?"📈":"📉"))+'</div>';}});
+ if(any){box.style.display="block";box.innerHTML='<b>Growth vs. target (+15%)</b>'+rows;}else{box.style.display="none";}}
+
+function renderAll(){renderCal();renderCards();renderBase();}
+document.getElementById("upd").textContent="\u21bb Trending data last updated: "+window.HS_DATA.lastUpdated;
+renderAll();
+</script>
+</body>
+</html>
