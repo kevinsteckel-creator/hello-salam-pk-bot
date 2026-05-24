@@ -119,13 +119,13 @@ footer{text-align:center;font-size:11px;color:#7a8a80;padding:18px 0;}
 
 <section>
   <h2><span class="n">3</span> 🔥 Trending in Pakistan right now</h2>
-  <p class="note">Live viral topics for our industry — refreshed every morning by the 7 AM automation. Click a source to see the original and turn it into a post.</p>
+  <p class="note">Live viral topics for our industry — refreshed every morning by the 9:30 AM automation. Click a source to see the original and turn it into a post.</p>
   <div id="trendbox"></div>
 </section>
 
 <section>
   <h2><span class="n">4</span> Add a custom task</h2>
-  <p class="note">Paste fresh ideas here from the 7 AM daily trend brief (<code>Daily-Brief-YYYY-MM-DD.md</code> in your Hello Salam folder).</p>
+  <p class="note">Paste fresh ideas here from the 9:30 AM daily trend brief (<code>Daily-Brief-YYYY-MM-DD.md</code> in your Hello Salam folder).</p>
   <div class="addrow">
     <input id="ct-topic" placeholder="Topic / idea">
     <select id="ct-fmt"><option value="reel">Reel</option><option value="carousel">Carousel</option><option value="photo">Photo</option></select>
@@ -179,7 +179,7 @@ footer{text-align:center;font-size:11px;color:#7a8a80;padding:18px 0;}
   <div id="resultBox" class="theme" style="display:none"></div>
 </section>
 
-<footer>Hello Salam Content Bot · live web version · refreshed daily by the 7 AM trend automation</footer>
+<footer>Hello Salam Content Bot · live web version · refreshed daily by the 9:30 AM trend automation</footer>
 </div>
 
 <script src="data.js"></script>
@@ -239,7 +239,7 @@ function renderCards(){const day=DAYS.find(d=>d.id===active);
  renderCustom();}
 
 function renderTrending(){const box=document.getElementById("trendbox");box.innerHTML="";
- if(!TRENDING.length){box.innerHTML='<p class="note">No trending items yet — the 7 AM automation will fill this in.</p>';return;}
+ if(!TRENDING.length){box.innerHTML='<p class="note">No trending items yet — the 9:30 AM automation will fill this in.</p>';return;}
  TRENDING.forEach(t=>{const d=document.createElement("div");d.className="trend";
   d.innerHTML='<div class="tt">'+esc(t.topic)+'</div><div class="tw">💡 '+esc(t.why)+'</div>'+
    (t.src?'<a class="linkbtn srcbtn" href="'+t.src+'" target="_blank">📎 See source</a>':'');
